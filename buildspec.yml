@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: 6.0
+  
+  
+  build:
+    commands:
+      - echo dotnet build started...
+      - dotnet build
+      - echo dotnet test started...
+      - dotnet test
+  post_build:
+    commands:
+      - echo dotnet publish started...
+      - dotnet publish -c Release -r linux-x64 -o ./ src/hello-world.csproj
+artifacts:
+  files:
+    - '**/*'
