@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: s3://s3-bucket-kt/hello-world.zip
+  - source: app
     destination: /home/ec2-user/hello-world
     permissions: '755'
     owner: ec2-user
