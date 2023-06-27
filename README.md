@@ -9,6 +9,7 @@ Different deployment scenarioes have been completed using this repository
 - Installed dotnet, CodeDeploy Agent on EC2
 - Add correct IAM policies to EC2 user
 - Add correct IAM policoes to Code* services accounts
+- Used for full CI CD in AWS
 ### Scenario 1
 - Used CodeBuild to create and artifact and store it in S3
 - Used CodeDeploy to consume the artifact and deploy it to an instance of EC2
